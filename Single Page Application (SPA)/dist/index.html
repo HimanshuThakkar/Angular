@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+       
+        <title>Create single Page Application using AngularJS</title>
+        
+        <!--bootstrap CDN-->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                
+    </head>
+    
+    <body ng-app="angularjsSimpleWebsiteApp">
+        
+            <nav class="navbar navbar-inverse">
+            
+                <div class="container-fluid">
+                    
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li> 
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </nav>
+            
+            <div ng-view></div>
+        
+        <!--Angular CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+        
+        <script src="js/main.min.js"></script>
+    </body>
+</html>
